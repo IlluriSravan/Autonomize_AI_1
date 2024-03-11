@@ -10,6 +10,7 @@ const GoalItem = props => {
   const {title, id, count} = item
   const [edit, setEdit] = useState(true)
   const [inp, setinp] = useState(title)
+  const pluralOrSingular=count>1?"Times":"Time"
 
   const iconToShow = edit ? (
     <FaPencil className="pencil" />
@@ -31,7 +32,7 @@ const GoalItem = props => {
       <div className="item">
         {edit ? (
           <p className="para">
-            {inp} (Updated {count} Times)
+            {inp} (Updated {count} {pluralOrSingular})
           </p>
         ) : (
           <input
