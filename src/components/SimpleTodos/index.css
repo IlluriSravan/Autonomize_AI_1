@@ -1,0 +1,46 @@
+.container {
+  background-color: #343b53;
+  height: 100vh;
+  padding: 60px;
+  overflow: auto;
+}
+.heading {
+  margin-bottom: 30px;
+  align-self: center;
+  color: white;
+}
+.todoContainer {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.inp {
+  height: 6vh;
+  width: 60vw;
+  margin-left: 40px;
+  border-radius: 8px;
+  border: none;
+}
+
+.add-button {
+  background-color: rgb(102, 120, 187);
+  align-self: flex-start;
+  height: 6vh;
+  margin-left: 40px;
+  border-radius: 8px;
+  margin-top: 0;
+  width: 15vw;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 386px) {
+  .add-button {
+    font-size: 10px;
+    height: 4vh;
+    width: 20vw;
+  }
+  .inp {
+    height: 4vh;
+  }
+}

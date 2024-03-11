@@ -1,0 +1,49 @@
+/* Write your CSS here */
+/* Write your CSS here */
+.individualItem {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 10px;
+  align-items: center;
+  width: 70vw;
+  color: white;
+  text-align: left;
+  background-color: rgb(102, 120, 187);
+}
+.checked {
+  text-decoration: line-through;
+}
+
+.para {
+  width: 60vw;
+  padding-left: 40px;
+}
+.edit-input {
+  width: 60vw;
+
+  padding: 20px;
+  background-color: white;
+  border: none;
+  color: black;
+}
+.icon {
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.remove {
+  color: red;
+  font-size: 24px;
+}
+.pencil {
+  font-size: 24px;
+  color: white;
+}
