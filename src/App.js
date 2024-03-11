@@ -1,7 +1,7 @@
-import SimpleTodos from './components/SimpleTodos'
+import DayGoals from './components/DayGoals'
 
 import './App.css'
 
-const App = () => <SimpleTodos />
+const App = () => <DayGoals />
 
 export default App

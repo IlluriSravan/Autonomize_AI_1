@@ -5,7 +5,7 @@ import {CiCircleRemove} from 'react-icons/ci'
 import {FaPencil} from 'react-icons/fa6'
 import {FaRegThumbsUp} from 'react-icons/fa'
 
-const TodoItem = props => {
+const GoalItem = props => {
   const {item, deleteFunction, editFunction} = props
   const {title, id, count} = item
   const [edit, setEdit] = useState(true)
@@ -56,4 +56,4 @@ const TodoItem = props => {
     </li>
   )
 }
-export default TodoItem
+export default GoalItem

@@ -1,11 +1,11 @@
 import './index.css'
 import {Component} from 'react'
 import {v4 as uuidv4} from 'uuid'
-import TodoItem from '../TodoItem'
+import GoalItem from '../GoalItem'
 
 const initialTodosList = []
 
-class SimpleTodos extends Component {
+class DayGoals extends Component {
   state = {todoList: initialTodosList}
 
   deleteFunction = id => {
@@ -77,7 +77,7 @@ class SimpleTodos extends Component {
 
           <ul className="unorderedList">
             {todoList.map(each => (
-              <TodoItem
+              <GoalItem
                 item={each}
                 key={each.id}
                 deleteFunction={this.deleteFunction}
@@ -91,5 +91,5 @@ class SimpleTodos extends Component {
   }
 }
 
-export default SimpleTodos
+export default DayGoals
 // Write your code here
